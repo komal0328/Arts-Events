@@ -1,352 +1,651 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="gallery.css">
-    <script src="script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <nav class="navbar">
+      <div class="logo">
+        <img src="Images\logo.jpeg" alt="logo" width="110px" />
+        <div class="logo_text">
+          <h1>V.K Event</h1>
+          <h5>We Create You Celebrate!</h5>
+        </div>
+      </div>
+
+      <ul class="nav_links">
+        <li>
+          <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="#service"
+            ><i class="fa-brands fa-servicestack"></i>Services</a
+          >
+        </li>
+        <li>
+          <a href="#occasion"
+            ><i class="fa-solid fa-cake-candles"></i>Occasions</a
+          >
+        </li>
+        <li>
+          <a href="#gallery"><i class="fa-regular fa-image"></i>Gallery</a>
+        </li>
+        
+        <li>
+          <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>  
+
+<!---------------gallery-------------------->
     <section class="gallery" id="g-page">
-        <h1>Our Gallery</h1>
-        <p>Some moments we are proud of</p>
+      <h1>Our Gallery</h1>
+      <p>Some moments we are proud of</p>
 
-        <div class="menu">
-            <button onclick="filtergallery('all')" class="active">All</button>
-            <button onclick="filtergallery('weding')">Wedding</button>
-            <button onclick="filtergallery('mehendi')">Mehendi</button>
-            <button onclick="filtergallery('rangoli')">Rangoli</button>
-            <button onclick="filtergallery('balloon')">Balloon Decoration</button>
-            <button onclick="filtergallery('haldi')">Haldi decoration</button>
-            <button onclick="filtergallery('flowers')">flowers Decoration</button>
-            
+      <div class="menu">
+        <button onclick="filterGallery('all')" class="active">All</button>
+        <button onclick="filterGallery('wedding')">Wedding</button>
+        <button onclick="filterGallery('mehendi')">Mehendi</button>
+        <button onclick="filterGallery('rangoli')">Rangoli</button>
+        <button onclick="filterGallery('flower')">flowers Decoration</button>
+        <button onclick="filterGallery('balloon')">Balloon Decoration</button>
+        <button onclick="filterGallery('haldi')">Haldi decoration</button>
+      </div>
+
+      <div class="grid">
+        <!------------Wedding-------->
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w8.jpg" />
         </div>
 
-        <div class="grid">
-            <!------------Wedding-------->
-            <div class="gallery-item">
-                <img src="Images\wedding\w8.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w9.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w10.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w12.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w13.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w14.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w15.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w16.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w17.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w18.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w19.webp">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w20.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w21.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w22.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w7.jpg">
-            </div>
-
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w6.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w5.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w4.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w3.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w2.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w1.webp">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w23.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w24.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\wedding\w25.jpg">
-            </div>
-            <!---------------Mehendi------------------>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m3.webp">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m4.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m5.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m6.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m7.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m8.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m9.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m10.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m11.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m12.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m13.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m14.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m15.webp">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m16.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m17.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\mehendi\m18.jpg">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="">
-            </div>
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w9.jpg" />
         </div>
 
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w10.jpg" />
+        </div>
 
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w12.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w13.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w14.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w15.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w16.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w17.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w18.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w19.webp" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w20.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w21.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w22.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w7.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w6.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w5.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w4.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w3.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w2.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w1.webp" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w23.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w24.jpg" />
+        </div>
+
+        <div class="gallery-item wedding">
+          <img src="Images\wedding\w25.jpg" />
+        </div>
+        <!---------------Mehendi------------------>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m3.webp" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m4.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m5.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m6.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m7.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m8.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m9.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m10.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m11.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m12.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m13.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m14.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m15.webp" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m16.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m17.jpg" />
+        </div>
+
+        <div class="gallery-item mehendi">
+          <img src="Images\mehendi\m18.jpg" />
+        </div>
+        <!----------------------rangoli---------------------->
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r3.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r4.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r5.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r6.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r7.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r8.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r9.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r10.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r11.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r12.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r13.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r14.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r15.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r28.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r27.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r26.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r25.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r24.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r23.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r22.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r21.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r20.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r19.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r18.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r17.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\rangoli\r16.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\r1.jpg" />
+        </div>
+
+        <div class="gallery-item rangoli">
+          <img src="Images\r2.jpg" />
+        </div>
+
+        <!----------------flower----------------->
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f23.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f1.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f2.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f3.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f4.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f5.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f6.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f7.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f8.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f9.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f12.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f13.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f14.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f15.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f16.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f17.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f18.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f19.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f20.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f21.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\f22.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\r24.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\f1.jpg" />
+        </div>
+
+        <div class="gallery-item flower">
+          <img src="Images\flower\r26.jpg" />
+        </div>
+
+        <!------------------balloon-------------------------->
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b1.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b2.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b3.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b4.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b5.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b6.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b7.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b8.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b9.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b10.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b12.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b13.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b14.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b15.jpeg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b16.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b17.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b18.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b19.avif" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b20.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b21.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b22.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b23.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b24.webp" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b25.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b26.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b27.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b28.jpg" />
+        </div>
+
+        <div class="gallery-item balloon">
+          <img src="Images\balloon\b29.webp" />
+        </div>
+        <!-------------------------haldi------------------------>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h1.webp" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h2.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h3.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h4.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h5.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h6.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h7.jpg" />
+        </div>
+
+        <div class="gallery-item haldi">
+          <img src="Images\haldi\h7.webp" />
+        </div>
+      </div>
     </section>
-</body>
+
+<!-------------------footer------------------------>
+<div class="foot" id="foot">
+      <div class="foot1">
+        <h2>V.K Event</h2>
+        <p>We bring your dreams to litle with</p>
+        <p>creativity & perfection.</p>
+
+        <div class="foot1-icon">
+          <a href="https://www.instagram.com/komalbhole41?igsh=dDJqNWdhazI0MWVy" target="_blank">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/919921836208" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <a href="#navbar" target="_blank"><li>Quick Links</li></a>
+
+        <div class="foot2-list">
+          <a href="#Home" target="_blank"><li>Home</li></a>
+          <a href="#Service" target="_blank"><li>Services</li></a>
+          <a href="#occasion" target="_blank"><li>Occasions</li></a>
+          <a href="#gallery" target="_blank"><li>Gallery</li></a>
+          
+        </div>
+      </div>
+
+      <div class="foot2">
+        <a href="#service" target="_blank"><li>Our Services</li></a>
+
+        <div class="foot2-list">
+          <a href="#service" target="_blank"><li>Mehendi</li></a>
+          <a href="#service" target="_blank"><li>Rangoli</li></a>
+          <a href="#service" target="_blank"><li>Flower Decoration</li></a>
+          <a href="#service" target="_blank"><li>Balloon Decoration</li></a>
+          <a href="#service" target="_blank"><li>Event Management</li></a>
+          <a href="#service" target="_blank"><li>Special Effects</li></a>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <a href="#" target="_blank" id="contact"><li>Contact us</li></a>
+
+        <div class="foot2-list">
+          <a href="tel:+919921836208" target="_blank"
+            ><li><i class="fa-solid fa-phone"></i> +91 9921836208</li></a
+          >
+          <a href="mailto:Vihaandecorators24@gmail.com" target="_blank"
+            ><li>
+              <i class="fa-solid fa-envelope"></i>
+              Vihaandecorators24@gmail.com
+            </li></a
+          >
+          <a href="#" target="_blank"
+            ><li>
+              <i class="fa-solid fa-location-dot"></i> Nashik, Maharashtra,
+              India
+            </li></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="foot3">
+      <div class="f3-div1">&copy 2026 V.K Event. All Rights Reserved.</div>
+
+      <div class="f3-div1">Privacy Policy | terms & Conditions</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

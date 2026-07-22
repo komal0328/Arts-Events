@@ -39,7 +39,7 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(4, 4fr);
-    gap: 15px;
+    gap: 20px;
     margin: 7px 100px;
 }
 
