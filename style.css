@@ -9,9 +9,10 @@
   --primary-color: rgb(106, 15, 72);
   --secondary-color: rgb(177, 41, 128);
 }
+
 .navbar {
   display: flex;
-  padding: 80px, 150px;
+  padding: 95px, 150px;
   justify-content: space-between;
   background-color: var(--primary-color);
   align-items: center;
@@ -99,6 +100,7 @@
   border-color: var(--primary-color);
   background-color: white;
   font-size: large;
+  text-decoration: none;
 }
 
 .bt2:hover {
@@ -168,6 +170,69 @@
   padding-bottom: 10px;
 }
 
+/*----------------occasion-----------*/
+.occasion {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.occasion h1 {
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+.oc-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 50px 90px;
+}
+
+.oc-icon {
+  overflow: hidden;
+}
+
+.oc-icon img {
+  object-fit: cover;
+  width: 70%;
+  height: 130px;
+}
+/*------------------gallery------------*/
+.gallery {
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 140px;
+}
+
+.gallery p {
+  padding-top: 10px;
+}
+
+.gallery-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 40px;
+}
+
+.gallery-img img {
+  width: 80%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.gallery a {
+  text-decoration: none;
+  padding: 15px 20px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  font-size: large;
+}
+
+.gallery a:hover{
+  background-color: var(--secondary-color);
+}
 /*---------------foooter------------*/
 .foot {
   background-color: var(--primary-color);
@@ -220,13 +285,17 @@
 }
 
 .foot3 {
+  padding: 30px 100px;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background-color: var(--primary-color);
-  color: rgb(184, 177, 177);
 }
 
-.foot3-div1 {
+.f3-div1 {
+  color: rgb(184, 177, 177);
   font-size: small;
+}
+
+.f3-div1:hover {
+  color: white;
 }
