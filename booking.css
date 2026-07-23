@@ -1,0 +1,140 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(106, 15, 72);
+  --secondary-color: rgb(177, 41, 128);
+}
+
+body {
+  background-color: #fff5f8;
+}
+
+.booking {
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  margin: 50px auto;
+}
+
+.booking-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-title h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.booking-title p {
+  color: var(--secondary-color);
+}
+
+.form-grid {
+  display: grid;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: medium;
+  color: #444;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus {
+  border-color: pink;
+}
+
+.booking h2 {
+  margin: 15px 0 10px;
+  color: var(--primary-color);
+}
+
+.service-grid {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.service-card {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  padding: 10px;
+  text-align: center;
+}
+
+.service-card:hover {
+  background: pink;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.book-btn {
+  width: 40%;
+  padding: 15px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.book-btn:hover {
+  background-color: pink;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .booking {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

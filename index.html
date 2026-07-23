@@ -58,7 +58,7 @@
         <p class="t-p3">We take care of everything for your perfect event.</p>
 
         <div class="bt">
-          <button class="bt1">Book an Order</button>
+          <a href="booking.html" class="bt1">Book an Order</a>
           <a href="#service" class="bt2">Explore Services</a>
         </div>
       </div>
@@ -83,7 +83,7 @@
           <div class="card-text">
             <h2>Mehendi</h2>
             <p>Bridal, Arabic & Traditional Mehendi Designs.</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
 
@@ -92,7 +92,7 @@
           <div class="card-text">
             <h2>Rangoli</h2>
             <p>Beautiful rangoli for festivals, events & celebrations</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
 
@@ -101,7 +101,7 @@
           <div class="card-text">
             <h2>Flower Decoration</h2>
             <p>Flower decorations for any occasion</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
 
@@ -110,7 +110,7 @@
           <div class="card-text">
             <h2>Balloon Decoration</h2>
             <p>Themed Balloon setups for all types of events</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
 
@@ -119,7 +119,7 @@
           <div class="card-text">
             <h2>Event Management</h2>
             <p>Complete event planning management</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
 
@@ -128,7 +128,7 @@
           <div class="card-text">
             <h2>Special Effects</h2>
             <p>Cold fire, fog handi & many more</p>
-            <button>Book Now</button>
+            <a href="booking.html">Book Now</a>
           </div>
         </div>
       </div>
@@ -273,5 +273,19 @@
     </div>
 
     <script src="script.js"></script>
+
+    <!-----------------sprinkle--------------->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script>
+      window.onload = function () {
+        confetti({
+          particleCount: 500,
+          spread: 360,
+          startVelocity: 40,
+          origin: { x: 0.5, y: 0 },
+        });
+      };
+    </script>
   </body>
 </html>

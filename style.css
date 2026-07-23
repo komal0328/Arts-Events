@@ -83,6 +83,7 @@
   background-color: var(--primary-color);
   border-radius: 10px;
   font-size: large;
+  text-decoration: none;
 }
 
 .bt1:hover {
@@ -145,16 +146,17 @@
   object-fit: cover;
 }
 
-.card button {
+.card-text a {
   padding: 7px 15px;
   border-radius: 5px;
   color: white;
   background-color: var(--primary-color);
   font-size: large;
   margin-top: 10px;
+  text-decoration: none;
 }
 
-.card button:hover {
+.card-text a:hover {
   background-color: var(--secondary-color);
 }
 
@@ -168,6 +170,10 @@
 .card-text h2 {
   color: var(--primary-color);
   padding-bottom: 10px;
+}
+
+.card-text p {
+  margin-bottom: 20px;
 }
 
 /*----------------occasion-----------*/
@@ -230,7 +236,7 @@
   font-size: large;
 }
 
-.gallery a:hover{
+.gallery a:hover {
   background-color: var(--secondary-color);
 }
 /*---------------foooter------------*/
@@ -274,6 +280,7 @@
 .foot1-icon a i {
   color: rgb(184, 177, 177);
   padding-top: 15px;
+  font-size: 25px;
 }
 
 .foot1-icon a i:hover {
@@ -298,4 +305,26 @@
 
 .f3-div1:hover {
   color: white;
+}
+
+/*--------------sprinkle------------------*/
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: gold;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }

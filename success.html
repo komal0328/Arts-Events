@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="success.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="success-card">
+      <i class="fa-solid fa-circle-check"></i>
+      <h1>Request Submitted!</h1>
+      <p>Your booking request has been received successfully.</p>
+
+      <div class="info">
+        <p>✅Our will review your requirements.</p>
+        <p>✅We will contact you within 24 hours.</p>
+        <p>
+          ✅A customised quotation will be shared based on your selected
+          services.
+        </p>
+      </div>
+
+      <a href="index.html" class="home-btn">Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-----------------sprinkle--------------->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script>
+      window.onload = function () {
+        confetti({
+          particleCount: 500,
+          spread: 360,
+          startVelocity: 40,
+          origin: { x: 0.5, y: 0 },
+        });
+      };
+    </script>
+  </body>
+</html>
